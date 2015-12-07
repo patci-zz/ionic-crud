@@ -1,0 +1,10 @@
+{
+  "name": "basic_app",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://192.168.0.3:3000/api/states"
+    }
+  ]
+}

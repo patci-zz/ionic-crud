@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="js/bundle.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 ng-cloak class="title">United States with Ionic!</h1>
+      </ion-header-bar>
+      <ion-content ng-cloak ng-controller="StatesController as states" ng-init="states.getAll()">
+        <form class="list" ng-submit="states.createState(states.newState)">
+        <h3>Add a State:</h3>
+        <label for="newStateName">
+          <input type="text" autofocus id="newStateName"placeholder="Ex: Washington" ng-model="states.newState.name">
+        </label>
+        <button class="button button-block button-calm">Submit</button>
+        </form>
+        <ion-list>
+        <div class="card">
+          <ion-item class="item-button-right" ng-cloak data-ng-repeat="state in states.states">
+            <strong>{{state.name}}</strong>
+            <ion-option-button ng-click="states.updateState(state)" class="button-assertive">Edit</ion-option-button>
+            <ion-option-button data-ng-click="states.deleteState(state)" class="button icon button-icon ion-trash-a"></ion-option-button>
+          </ion-item>
+        </div>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

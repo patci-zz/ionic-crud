@@ -1,0 +1,17 @@
+{
+  "name": "usa_restful",
+  "version": "0.1.0",
+  "description": "back-end for ionic",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "rpatci@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.9"
+  }
+}
