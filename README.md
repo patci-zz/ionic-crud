@@ -1,5 +1,5 @@
 # Ionic USA!
-*Ionic and Angular front-end with a Node, Express, Mongo back-end.*
+*Ionic and Angular front-end app with a separate Node, Express, Mongo back-end app.*
 
 <h2>Ionic Exploring</h2>
 <p>Ionic is a powerful devkit utilizing HTML5, CSS3, SASS, JavaScript, and Angular.js to build native-feeling mobile applications. It is more concerned with the look, feel, and interaction of the front-end over anything else.</p>
