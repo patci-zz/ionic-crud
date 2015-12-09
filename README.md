@@ -13,6 +13,8 @@
 <p>Ionic curently supports two main platforms for mobile development: iOS, and Android. To begin, for example, with iOS, tpye *ionic add platform ios* in the command line.
 <h2>Build and view a Project</h2>
 <p>To set up a build before running your application, *ionic build iOS* is the perfect command. Afterwards, you can perform *ionic serve* to display your application to the browser. To see it in a native view (with iOS & Android side-by-side) run *ionic serve --lab*</p>
+<h2>Sharing your Project</h2>
+<p>Want to see what your project looks like (say, on an iOS device) but don't want to pay the $99 for an Apple developer account? No problem, use *ionic upload* to send your project straight to Ionic and you can see it live on your phone through the ionic view app (downloaded from the app store). Friends, family, or maybe collabroators who want to also check it out will need to sign up for an ionic account and also download the ionic view app in order to view it (in addition they will need the app id associated with the project).
 <h2>Reflections</h2>
 <p>Ionic is a great resource, with a couple catches:</p>
 * It does not play that nice with Angular ($scope issues).
