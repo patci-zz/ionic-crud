@@ -18,4 +18,7 @@
 * It does not play that nice with Angular ($scope issues).
 * Getting a fully-functional iOS emulate requires a hooks dir workaround.
 * Not as smooth when running as a true mobile app.
+
+
+
 <p>Overall, though, it is a very beneficial tool for web developers who want to showcase the possibilities of a mobile experience either with pre-existing content (their own website) or a standalone functioning app.</p>
